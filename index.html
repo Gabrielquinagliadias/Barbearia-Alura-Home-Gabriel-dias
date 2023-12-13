@@ -1,55 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-    <link rel="styleheed" href="style.css">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato - Barbearia Alura</title>
 
-</head>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
 
-<body>
-   
-    <header class="cabeçalho">
-     <div class="caixa"> 
-   
-        <h1><img src="logo.png" alt="" srcset=""></h1>
+                <nav>
+                    <ul>
+                        <li><a href="https://gabrielquinagliadias.github.io/BarbeariaAluraGabriel/"&gt; HOME</a></li>
+<li><a href="https://gabrielquinagliadias.github.io/Barbearia-Alura-Home-Gabriel-dias/"&gt; PRODUTOS</a></li>
+<li><a href="https://baiano20.github.io/Barbearia-Alura_Contatos/"&gt; CONTATOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <nav>
-   <ul>
-   <li><a href="https://gabrielquinagliadias.github.io/BarbeariaAluraGabriel/">HOME</a></li>
-   <li><a href="https://gabrielquinagliadias.github.io/Barbearia-Alura-Home-Gabriel-dias/"></a></li>
-   <li>contatos</li>
-   </ul>
-</nav>
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
 
-</div> 
-</header>
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-<main>
- <ul class="produtos"></ul>
- <li>
-      <h2>cabelo</h2>
-    <img src="cabelo.jpg" alt="">
-    <p class="descriçao">Na tesoura ou maquina,como o cliente preferir</p>
-    <p class="preço">R$25,00</p>
-  </li>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-<li>
-  <h2>barba</h2>
-<img src="barba.jpg" alt="">
-<p class="descriçao">corte e desenho profissional de barba</p>
-<p class="preço">R$18,00</p>
-</li>
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
-<li>
- <h2>cabelo+barba</h2>
- <img src="cabelo+barba.jpg" alt="">
- <p class="descriçao">Pacote completo de cabelo e barba</p>
-<p class="preço">R$35,00</p>
-</li>
-</main>
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                   
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                   
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                </fieldset>
 
-</body>
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <img src="logo-branco.png" alt="Logo da Barbearia Alura">
+           
+        </footer>
+    </body>
 </html>
